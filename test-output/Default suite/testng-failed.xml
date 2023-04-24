@@ -5,10 +5,11 @@
     <classes>
       <class name="testcases.LoginTest">
         <methods>
+          <include name="ReportClean"/>
           <include name="SetUp"/>
-          <include name="test1"/>
           <include name="TearDown"/>
-          <include name="test2"/>
+          <include name="test4"/>
+          <include name="ReportSetup"/>
         </methods>
       </class> <!-- testcases.LoginTest -->
     </classes>

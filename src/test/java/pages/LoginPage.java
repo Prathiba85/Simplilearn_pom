@@ -25,7 +25,7 @@ public class LoginPage {
 
 	public LoginPage(WebDriver driver) {
 		this.driver = driver;
-		PageFactory.initElements(driver, this);
+		PageFactory.initElements(driver,this);	
 	}
 
 	public void LoginFunction(String usernameval, String passwordval) throws InterruptedException {

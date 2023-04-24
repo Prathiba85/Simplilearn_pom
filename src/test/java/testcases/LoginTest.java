@@ -10,20 +10,26 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import com.codoid.products.exception.FilloException;
+import com.codoid.products.fillo.Recordset;
+import com.github.dockerjava.transport.DockerHttpClient.Request.Method;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 import pages.LoginPage;
 
 public class LoginTest extends BaseClass {
-	@Test
+	public LoginPage lp;
+
+	@Test(priority = 2)
 	public void test1() throws InterruptedException {
-		LoginPage lp = new LoginPage(driver);
+		lp = new LoginPage(driver);
 
 		lp.LoginFunction("sanprathi@gmail.com", "Chifley08");
 	}
 
-	@Test
+	@Test(priority = 3)
 	public void test2() throws InterruptedException {
-		LoginPage lp = new LoginPage(driver);
+		lp = new LoginPage(driver);
 
 		lp.LoginFunction("sanprathi@gmail.com", "Chifley09");
 
@@ -31,6 +37,18 @@ public class LoginTest extends BaseClass {
 		String actual_error = error.getText();
 		String expected_error = "The email or password you have entered is invalid.";
 		Assert.assertEquals(actual_error, expected_error);
+
+	}
+
+	@Test(priority = 4)
+	public void test4() throws InterruptedException, FilloException {
+		lp = new LoginPage(driver);
+		Recordset recordset = connection.executeQuery("Select * from data where TestName = 'test04'");
+				recordset.next();
+		String username = recordset.getField("UserName");
+		String password = recordset.getField("Password");
+		System.out.println(username);
+		lp.LoginFunction(username, password);
 
 	}
 
