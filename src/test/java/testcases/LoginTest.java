@@ -20,7 +20,7 @@ import pages.LoginPage;
 public class LoginTest extends BaseClass {
 	public LoginPage lp;
 
-	@Test(priority = 2)
+	@Test(priority = 2, groups ="sanity")
 	public void test1() throws InterruptedException {
 		lp = new LoginPage(driver);
 

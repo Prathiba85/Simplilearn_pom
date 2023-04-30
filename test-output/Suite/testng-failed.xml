@@ -2,16 +2,17 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
+    <groups>
+      <run>
+        <include name="sanity"/>
+      </run>
+    </groups>
     <classes>
-      <class name="testcases.HomePage">
+      <class name="testcases.LoginTest">
         <methods>
-          <include name="test_3"/>
-          <include name="ReportClean"/>
-          <include name="SetUp"/>
-          <include name="TearDown"/>
-          <include name="ReportSetup"/>
+          <include name="test1"/>
         </methods>
-      </class> <!-- testcases.HomePage -->
+      </class> <!-- testcases.LoginTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

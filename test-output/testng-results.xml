@@ -1,40 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="3" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-04-24T22:35:46Z" name="Default suite" finished-at="2023-04-24T22:36:04Z" duration-ms="17504">
+  <suite started-at="2023-04-30T06:14:53Z" name="Suite" finished-at="2023-04-30T06:14:57Z" duration-ms="3884">
     <groups>
     </groups>
-    <test started-at="2023-04-24T22:35:46Z" name="Default test" finished-at="2023-04-24T22:36:04Z" duration-ms="17504">
-      <class name="testcases.LoginTest">
-        <test-method is-config="true" signature="ReportSetup()[pri:0, instance:testcases.LoginTest@6c4980d3]" started-at="2023-04-24T22:35:46Z" name="ReportSetup" finished-at="2023-04-24T22:35:46Z" duration-ms="331" status="PASS">
+    <test started-at="2023-04-30T06:14:53Z" name="Test" finished-at="2023-04-30T06:14:57Z" duration-ms="3884">
+      <class name="testcases.HomePage">
+        <test-method is-config="true" signature="ReportSetup()[pri:0, instance:testcases.HomePage@1984b1f]" started-at="2023-04-30T06:14:53Z" name="ReportSetup" finished-at="2023-04-30T06:14:53Z" duration-ms="465" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ReportSetup -->
-        <test-method is-config="true" signature="SetUp(java.lang.reflect.Method)[pri:0, instance:testcases.LoginTest@6c4980d3]" started-at="2023-04-24T22:35:46Z" name="SetUp" finished-at="2023-04-24T22:35:48Z" duration-ms="2412" status="PASS">
+        <test-method is-config="true" signature="SetUp(java.lang.reflect.Method)[pri:0, instance:testcases.HomePage@1984b1f]" started-at="2023-04-30T06:14:53Z" name="SetUp" finished-at="2023-04-30T06:14:57Z" duration-ms="3584" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void testcases.LoginTest.test4() throws java.lang.InterruptedException,com.codoid.products.exception.FilloException]]>
+                <![CDATA[public void testcases.HomePage.test_3()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUp -->
-        <test-method signature="test4()[pri:4, instance:testcases.LoginTest@6c4980d3]" started-at="2023-04-24T22:35:48Z" name="test4" finished-at="2023-04-24T22:36:03Z" duration-ms="14712" status="PASS">
+        <test-method signature="test_3()[pri:1, instance:testcases.HomePage@1984b1f]" started-at="2023-04-30T06:14:57Z" name="test_3" finished-at="2023-04-30T06:14:57Z" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test4 -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:testcases.LoginTest@6c4980d3]" started-at="2023-04-24T22:36:03Z" name="TearDown" finished-at="2023-04-24T22:36:04Z" duration-ms="370" status="PASS">
+        </test-method> <!-- test_3 -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:testcases.HomePage@1984b1f]" started-at="2023-04-30T06:14:57Z" name="TearDown" finished-at="2023-04-30T06:14:57Z" duration-ms="285" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
-        <test-method is-config="true" signature="ReportClean()[pri:0, instance:testcases.LoginTest@6c4980d3]" started-at="2023-04-24T22:36:04Z" name="ReportClean" finished-at="2023-04-24T22:36:04Z" duration-ms="145" status="PASS">
+        <test-method is-config="true" signature="ReportClean()[pri:0, instance:testcases.HomePage@1984b1f]" started-at="2023-04-30T06:14:57Z" name="ReportClean" finished-at="2023-04-30T06:14:57Z" duration-ms="164" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ReportClean -->
-      </class> <!-- testcases.LoginTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- testcases.HomePage -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
